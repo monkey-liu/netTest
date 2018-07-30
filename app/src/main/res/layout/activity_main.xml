@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".GetRequest">
+
+    <EditText
+        android:id="@+id/ed_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="请输入你要翻译的单词或语句"
+         />
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_below="@+id/ed_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="4dp"
+        android:layout_centerHorizontal="true"
+        android:hint="" />
+    <TextView
+        android:id="@+id/tv_get_result"
+
+        android:layout_width="77dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_result"
+        android:textSize="16dp"
+        android:padding="10dp"
+        android:gravity="center_horizontal"
+        android:background="@color/colorPrimary"
+        android:text="查询"
+        />
+    <ListView
+        android:id="@+id/lv_searchlist"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_get_result"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+</RelativeLayout>
