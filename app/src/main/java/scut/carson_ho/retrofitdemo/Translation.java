@@ -13,6 +13,7 @@ public class Translation {
         private String to;
         private String vendor;
         private String out;
+
         private int errNo;
     }
 
